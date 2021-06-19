@@ -21,8 +21,6 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
 
 .heading {
     display: flex;
-    // justify-content: space-around;
-    // align-items: center;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
     grid-template-areas: ". logo search .";
