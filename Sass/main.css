@@ -32,6 +32,14 @@ body {
   height: 3rem;
   line-height: 3;
 }
+.heading__search ::-moz-placeholder {
+  color: black;
+  font-size: 1.13rem;
+}
+.heading__search :-ms-input-placeholder {
+  color: black;
+  font-size: 1.13rem;
+}
 .heading__search ::placeholder {
   color: black;
   font-size: 1.13rem;
@@ -41,7 +49,7 @@ body {
   outline: none;
   font-size: 1.13rem;
   padding-left: 1rem;
-  height: 92%;
+  height: 100%;
   width: 50%;
   background: #EAEAEA;
 }
@@ -65,16 +73,15 @@ body {
   margin-top: -1rem;
   padding-bottom: 3rem;
 }
-.foot__conteneuraetspan__span {
-  color: white;
+.foot__conteneuraetspan > span {
+  color: sandybrown;
+  border: 1px solid green;
 }
 .foot__conteneuraetspan__lien {
   color: white;
   border: 1px solid blue;
+  margin-left: -3rem;
 }
 .foot__conteneuraetspan__lien--modifier {
   color: red;
-  margin-left: 0.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -3,18 +3,29 @@ body {
     padding: 0;
 }
 
-$white-color:white;
+$white-color:#FFFFFF;
 $bg-search:#EAEAEA;
 $bg-corp:#F6F6F6;
+$bg-footer:#353535;
 $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
-@mixin element-center {
+@mixin centrer-et-mettre-en-colone {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-@mixin decalementhautbas-in-footer {
+@mixin enlv-deco-a {
+    text-decoration: none;
+}
+
+@mixin centrer-uniqmnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin decalementhautbas {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -30,7 +41,7 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
     }
     &__logo {
         grid-area: logo;
-        @include decalementhautbas-in-footer
+        @include decalementhautbas;
     }
     &__search {
         display: flex;
@@ -38,7 +49,7 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
         background: $bg-search;
         align-items: center;
         justify-content: center;
-        @include decalementhautbas-in-footer;
+        @include decalementhautbas;
         &__map {
             display: block;
             height: 3rem;
@@ -54,10 +65,40 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
             font-size: 1.13rem;
             // font-weight: bold;
             padding-left: 1rem;
-            height: 100%;
+            height: 92%;
             width: 50%;
             background: $bg-search;
-            // background: $bg-szarch;
+        }
+    }
+}
+
+.foot {
+    display: grid;
+    background: black;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+    grid-template-areas: ". . logo logo" "liste liste liste liste";
+    color: green;
+    &__logo {
+        grid-area: logo;
+        border: 1px solid green;
+        height: 10rem;
+    }
+    &__conteneuraetspan {
+        grid-area: liste;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -1rem;
+        padding-bottom: 3rem;
+        &__span {
+            color: white;
+        }
+        &__lien {
+            color: white;
+            border: 1px solid blue;
+            &--modifier {
+                color: red;
+                margin-left: 0.5rem;
+            }
         }
     }
 }
