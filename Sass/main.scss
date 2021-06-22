@@ -7,7 +7,7 @@ $white-color:#FFFFFF;
 $bg-search:#EAEAEA;
 $bg-corp:#F6F6F6;
 $bg-footer:#353535;
-$box-shadow-header :0 5px 10px 0 rgb(246 246 246);
+$box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
 @mixin centrer-et-mettre-en-colone {
     display: flex;
     justify-content: center;
@@ -33,9 +33,9 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
 .heading {
     display: flex;
     display: grid;
+    padding-bottom: 2rem;
     grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
     grid-template-areas: ". logo search .";
-    box-shadow: $box-shadow-header;
     &__retour {
         display: none;
     }
@@ -99,6 +99,46 @@ $box-shadow-header :0 5px 10px 0 rgb(246 246 246);
                 color: red;
                 margin-left: 0.5rem;
             }
+        }
+    }
+}
+
+.principale {
+    display: grid;
+    background: $bg-corp;
+    &__titre-foncmnt {
+        background: $bg-search;
+        text-align: center;
+        margin-top: 0;
+        padding: 0.5rem;
+        box-shadow: $box-shadow-head;
+    }
+}
+
+.partie-centrale {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "section1 section2";
+    &__section1 {
+        grid-area: section1;
+        text-align: center;
+    }
+    &__section2 {
+        grid-area: section2;
+        display: flex;
+        @include centrer-et-mettre-en-colone;
+        &__conteneur-chifretexte {
+            @include centrer-uniqmnt;
+            border: 1px solid black;
+            background: $white-color;
+            border-radius: 2rem;
+            width: 50%;
+            height: 5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.7rem;
+        }
+        &__conteneur-chifretexte:hover {
+            background: chartreuse;
         }
     }
 }
