@@ -63,7 +63,6 @@ body {
 }
 .foot__logo {
   grid-area: logo;
-  border: 1px solid green;
   height: 10rem;
 }
 .foot__conteneuraetspan {
@@ -78,10 +77,8 @@ body {
 }
 .foot__conteneuraetspan__lien {
   color: white;
-  border: 1px solid blue;
 }
 .foot__conteneuraetspan__lien--modifier {
-  color: red;
   margin-left: 0.5rem;
 }
 
@@ -108,23 +105,33 @@ body {
 }
 .partie-centrale__section2 {
   grid-area: section2;
-  display: flex;
+  box-shadow: -3px 0px 1px black;
+  margin-top: -1.2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid violet;
 }
 .partie-centrale__section2__conteneur-chifretexte {
   display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid black;
   background: #FFFFFF;
   border-radius: 2rem;
   width: 50%;
   height: 5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   margin-bottom: 0.7rem;
+}
+.partie-centrale__section2__conteneur-chifretexte__chiffre {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 2;
+  background: #9356DC;
+  margin-left: -0.9rem;
+  margin-top: 1.5rem;
 }
 .partie-centrale__section2__conteneur-chifretexte:hover {
   background: chartreuse;
