@@ -317,11 +317,12 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
     }
     &__section2 {
         grid-area: section2;
-        box-shadow: -3px 0px 1px $color-black;
+        box-shadow: -3px 0px 1px black;
+        margin-top: -1.2rem;
         @include centrer-et-mettre-en-colone;
         &__conteneur-chifretexte {
             display: flex;
-            border: 1px solid $color-black;
+            border: 1px solid black;
             background: $white-color;
             border-radius: 2rem;
             width: 50%;
@@ -332,22 +333,23 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
                 margin-top: 1.6rem;
                 font-size: 1.5rem;
                 margin-left: 1rem;
+                color: gray;
                 &--chiffre {
-                    background: $color-primary;
+                    background: #9356DC;
                     text-align: center;
                     height: 2rem;
                     width: 2rem;
                     border-radius: 100%;
                     line-height: 1.4;
                     margin-left: -1rem;
-                    color: $white-color;
+                    color: #FFFFFF;
                 }
                 &--texte {
                     margin-left: 0.5rem;
-                    color: red;
+                    color: rgb(0, 0, 0);
                 }
                 &--store {
-                    color: $color-primary;
+                    color: #9356DC;
                 }
             }
         }

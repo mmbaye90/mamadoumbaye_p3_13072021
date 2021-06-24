@@ -117,6 +117,7 @@ body {
   grid-area: section2;
   -webkit-box-shadow: -3px 0px 1px black;
           box-shadow: -3px 0px 1px black;
+  margin-top: -1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +148,7 @@ body {
   margin-top: 1.6rem;
   font-size: 1.5rem;
   margin-left: 1rem;
+  color: gray;
 }
 .principale__section2__conteneur-chifretexte__item--chiffre {
   background: #9356DC;
@@ -160,7 +162,7 @@ body {
 }
 .principale__section2__conteneur-chifretexte__item--texte {
   margin-left: 0.5rem;
-  color: red;
+  color: black;
 }
 .principale__section2__conteneur-chifretexte__item--store {
   color: #9356DC;
