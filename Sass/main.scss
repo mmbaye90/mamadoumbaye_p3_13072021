@@ -105,18 +105,6 @@ $box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
 
 .principale {
     display: grid;
-    background: $bg-corp;
-    &__titre-foncmnt {
-        background: $bg-search;
-        text-align: center;
-        margin-top: 0;
-        padding: 0.5rem;
-        box-shadow: $box-shadow-head;
-    }
-}
-
-.partie-centrale {
-    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "section1 section2";
     &__section1 {
@@ -128,7 +116,6 @@ $box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
         box-shadow: -3px 0px 1px black;
         margin-top: -1.2rem;
         @include centrer-et-mettre-en-colone;
-        border-bottom: 1px solid violet;
         &__conteneur-chifretexte {
             display: flex;
             border: 1px solid black;
@@ -138,19 +125,29 @@ $box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
             height: 5rem;
             margin-top: 0.7rem;
             margin-bottom: 0.7rem;
-            &__chiffre {
-                width: 2rem;
-                height: 2rem;
-                border-radius: 100%;
-                text-align: center;
-                line-height: 2;
-                background: $color-primary;
-                margin-left: -0.9rem;
-                margin-top: 1.5rem;
+            &__item {
+                margin-top: 1.6rem;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+                color: gray;
+                &--chiffre {
+                    background: #9356DC;
+                    text-align: center;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                    line-height: 1.4;
+                    margin-left: -1rem;
+                    color: #FFFFFF;
+                }
+                &--texte {
+                    margin-left: 0.5rem;
+                    color: rgb(0, 0, 0);
+                }
+                &--store {
+                    color: #9356DC;
+                }
             }
-        }
-        &__conteneur-chifretexte:hover {
-            background: chartreuse;
         }
     }
 }
