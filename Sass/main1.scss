@@ -88,7 +88,6 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
 }
 
 .principale {
-    border: 1px solid black;
     margin-top: -2rem;
     background: $bg-corp;
     position: relative;
@@ -98,6 +97,11 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-left: 1.5rem;
+        &>span {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+        }
     }
     &__entree {
         margin-left: 1.5rem;
@@ -110,10 +114,8 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
         background: $color-tertiaire;
     }
     &__blocparent {
-        border: 1px solid rgb(245, 12, 12);
         @include centrer-et-mettre-en-colone;
         &__menu {
-            border: 1px solid black;
             display: flex;
             justify-content: space-between;
             background: $white-color;
@@ -122,13 +124,12 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
             border-radius: 1rem;
             padding-left: 0.5rem;
             width: 90%;
-            // overflow: hidden;
+            overflow: hidden;
             &__h3para {
                 line-height: 0.5;
             }
             &__prix {
                 display: flex;
-                align-items: flex-end;
             }
             &__bg-cercle {
                 background: $color-tertiaire;
@@ -137,8 +138,25 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
                 border-bottom-right-radius: 1rem;
                 @include centrer-uniqmnt;
                 position: relative;
-                // margin-right: -1rem;
+                margin-right: -4rem;
             }
+        }
+    }
+    &__bouton {
+        padding: 1rem;
+        width: 14rem;
+        border-radius: 2rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        border: none;
+        height: 4rem;
+        color: $white-color;
+        font-size: 1.2rem;
+        background: linear-gradient( 349deg, $color-primary, $color-second);
+        &:hover {
+            box-shadow: $box-shadow-carte;
+            transition: box-shadow 150ms linear;
         }
     }
 }

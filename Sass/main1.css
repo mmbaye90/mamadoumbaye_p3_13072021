@@ -45,7 +45,6 @@ body {
 }
 
 .principale {
-  border: 1px solid black;
   margin-top: -2rem;
   background: #F6F6F6;
   position: relative;
@@ -62,6 +61,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 1.5rem;
+}
+.principale__cntnr-titre-coeur > span {
+  font-size: 1.5rem;
+  margin-right: 2rem;
 }
 .principale__entree {
   margin-left: 1.5rem;
@@ -74,7 +78,6 @@ body {
   background: #99E2D0;
 }
 .principale__blocparent {
-  border: 1px solid #f50c0c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +93,6 @@ body {
           align-items: center;
 }
 .principale__blocparent__menu {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +105,7 @@ body {
   border-radius: 1rem;
   padding-left: 0.5rem;
   width: 90%;
+  overflow: hidden;
 }
 .principale__blocparent__menu__h3para {
   line-height: 0.5;
@@ -111,9 +114,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 .principale__blocparent__menu__bg-cercle {
   background: #99E2D0;
@@ -130,6 +130,28 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-right: -4rem;
+}
+.principale__bouton {
+  padding: 1rem;
+  width: 14rem;
+  border-radius: 2rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border: none;
+  height: 4rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  background: linear-gradient(349deg, #9356DC, #FF79DA);
+}
+.principale__bouton:hover {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-box-shadow 150ms linear;
+  transition: -webkit-box-shadow 150ms linear;
+  transition: box-shadow 150ms linear;
+  transition: box-shadow 150ms linear, -webkit-box-shadow 150ms linear;
 }
 
 .foot {
