@@ -53,8 +53,8 @@ body {
 }
 .loader__conteneur > span {
   display: inline-block;
-  width: 0rem;
-  height: 0rem;
+  width: 0;
+  height: 0;
   border-radius: 1rem;
   background: #9356DC;
   margin-top: -6rem;
