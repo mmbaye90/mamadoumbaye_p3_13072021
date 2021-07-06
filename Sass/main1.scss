@@ -110,14 +110,16 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
         margin-left: 0rem;
         margin-top: 0.2rem;
         width: 2.4rem;
-        border: $color-tertiaire 3px solid;
+        border: $color-tertiaire 2px solid;
         background: $color-tertiaire;
     }
     &__blocparent {
         @include centrer-et-mettre-en-colone;
         &__menu {
             display: flex;
-            justify-content: space-between;
+            height: 5rem;
+            box-shadow: $box-shadow-carte;
+            flex-direction: column;
             background: $white-color;
             margin-bottom: 1rem;
             color: black;
@@ -125,20 +127,57 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
             padding-left: 0.5rem;
             width: 90%;
             overflow: hidden;
-            &__h3para {
-                line-height: 0.5;
+            position: relative;
+            opacity: 0;
+            animation: chaine 1.2s .3s ease-out both, transform .3s;
+            transition: all 1.5s;
+            @keyframes chaine {
+                0% {
+                    transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
-            &__prix {
+            &:hover>&__bg-cercle {
+                visibility: visible;
+                transition: all .5s ease-in;
+                transform: translateX(-100%);
+            }
+            &__h3 {
+                width: 100%;
+            }
+            &__ing-prix {
                 display: flex;
+                justify-content: space-between;
+                margin-top: -1rem;
+                &__ing {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                &__prix {
+                    padding-right: 0.5rem;
+                }
             }
             &__bg-cercle {
                 background: $color-tertiaire;
-                width: 4rem;
-                border-top-right-radius: 1rem;
-                border-bottom-right-radius: 1rem;
+                position: absolute;
                 @include centrer-uniqmnt;
-                position: relative;
-                margin-right: -4rem;
+                top: 0;
+                left: 100%;
+                width: 20%;
+                height: 100%;
+                border-radius: 0 1rem 1rem 0;
+                font-size: 1.25rem;
+                transform-origin: right;
+                &__cercle {
+                    color: $white-color;
+                }
             }
         }
     }
@@ -198,4 +237,14 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
             }
         }
     }
+}
+
+.principale__blocparent__menu:hover>.principale__blocparent__menu__bg-cercle .principale__blocparent__menu__bg-cercle__cercle {
+    transform: rotate( 180deg);
+    transition-duration: 1s;
+}
+
+.principale__blocparent__menu:hover>.principale__blocparent__menu__ing-prix {
+    width: 75%;
+    overflow: hidden;
 }
