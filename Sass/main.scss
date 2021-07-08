@@ -300,7 +300,8 @@
                       background-clip: text;
                       -webkit-text-fill-color: transparent;
                       opacity: 1;
-                      transition: opacity 1s;
+                      transform: scale(1.15);
+                      transition: transition 1s;
                   }
               }
               &__slide {
