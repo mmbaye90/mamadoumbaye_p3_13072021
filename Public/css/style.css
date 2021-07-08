@@ -290,6 +290,15 @@ body {
   top: 0;
   right: 1rem;
   color: #278870;
+  animation: slide 280ms 0s alternate infinite;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media all and (max-width: 900px) {
