@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: Shrikhand, "cursive";
 }
 
 @media all and (max-width: 600px) {
@@ -49,9 +54,29 @@ body {
   justify-content: space-between;
   margin-left: 1.5rem;
 }
-.principale__cntnr-titre-coeur > span {
+.principale__cntnr-titre-coeur__coeur-vide {
   font-size: 1.5rem;
   margin-right: 2rem;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+}
+.principale__cntnr-titre-coeur__coeur-filled {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  background: linear-gradient(228deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  opacity: 0;
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+.principale__cntnr-titre-coeur__coeur-filled:hover {
+  opacity: 1;
+  transform: scale(1.15);
 }
 .principale__entree {
   margin-left: 1.5rem;

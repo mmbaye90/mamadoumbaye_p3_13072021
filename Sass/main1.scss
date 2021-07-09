@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+h1 {
+    font-family: Shrikhand, "cursive";
+}
+
 $color-primary :#9356DC;
 $color-second:#FF79DA;
 $color-tertiaire:#99E2D0;
@@ -98,9 +103,29 @@ $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
         align-items: center;
         justify-content: space-between;
         margin-left: 1.5rem;
-        &>span {
+        &__coeur-vide {
             font-size: 1.5rem;
             margin-right: 2rem;
+            position: absolute;
+            right: 0;
+            opacity: 1;
+        }
+        &__coeur-filled {
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            background: linear-gradient( 228deg, $color-primary, $color-second);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1);
+            opacity: 0;
+            font-size: 1.5rem;
+            transition: all 1s;
+            &:hover {
+                opacity: 1;
+                transform: scale(1.15);
+            }
         }
     }
     &__entree {
