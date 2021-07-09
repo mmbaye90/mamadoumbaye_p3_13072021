@@ -544,3 +544,180 @@
           }
       }
   }
+  
+  @media all and (max-width:360px) {
+      .loader {
+          &__img {
+              opacity: 0;
+          }
+      }
+      .principale {
+          &__section2 {
+              &__titre-foncmnt {
+                  margin-left: 0;
+                  @include centrer-uniqmnt;
+              }
+          }
+      }
+      .section-photo {
+          &__titre {
+              margin-left: 0;
+              @include centrer-uniqmnt;
+          }
+          &__bloca {
+              &__conteneur-textecoeur {
+                  width: 100%;
+                  margin-left: 0;
+                  &__texte {
+                      &>p {
+                          font-size: 1rem;
+                          margin-top: 0;
+                      }
+                      &>h3 {
+                          font-size: 1rem;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  @media all and (max-width:360px) {
+      .heading {
+          &__logo {
+              justify-content: inherit;
+              &>img {
+                  width: 100%;
+              }
+          }
+          &__search {
+              justify-content: inherit;
+          }
+      }
+      .principale {
+          &__section1 {
+              justify-content: inherit;
+              text-align: inherit;
+              &__titre-reservez {
+                  transform: translateX(-3rem);
+                  display: flex;
+                  flex-wrap: wrap;
+                  width: 54%;
+              }
+              &>p {
+                  padding-left: 0;
+                  margin-left: -2rem;
+                  width: 76%;
+                  font-size: 1rem;
+              }
+              &__bouton {
+                  width: 50%;
+                  transform: translateX(-3rem);
+              }
+          }
+          &__section2 {
+              &__titre-foncmnt {
+                  font-size: 1.10rem;
+              }
+              &__conteneur-chifretexte {
+                  height: 15rem;
+                  flex-direction: column;
+                  &>span {
+                      margin-top: -0.7rem;
+                      margin-left: -0.7rem;
+                  }
+                  &__item {
+                      font-size: 1rem;
+                      margin-bottom: 2rem;
+                      &--chiffre {
+                          margin-top: -0.8rem;
+                      }
+                      &--texte {
+                          font-weight: bold;
+                          margin-left: 1.5rem;
+                          margin-top: 2.3rem;
+                      }
+                      &--store {
+                          color: $color-primary;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  @media all and (max-width:220px) {
+      .principale {
+          &__section1 {
+              &__titre-reservez {
+                  transform: translateX(-2rem);
+                  width: 40%;
+              }
+              &>p {
+                  margin-left: -3.5rem;
+                  width: 46%;
+                  font-size: 0.7rem;
+              }
+              &__bouton {
+                  width: 70%;
+                  transform: translateX(-1.5rem);
+                  height: 5rem;
+              }
+          }
+          &__section2 {
+              padding: 0;
+              &__titre-foncmnt {
+                  margin-left: -1rem;
+              }
+              &__conteneur-chifretexte {
+                  height: 10rem;
+                  margin-left: -1rem;
+                  &__item {
+                      font-size: 1rem;
+                      margin-bottom: 2rem;
+                      &--chiffre {
+                          margin-top: -0.8rem;
+                      }
+                      &--texte {
+                          margin-top: 2.3rem;
+                      }
+                      &--store {
+                          color: $color-primary;
+                      }
+                  }
+              }
+          }
+      }
+      .section-photo {
+          &__titre {
+              margin-left: -1rem;
+          }
+          &__bloca {
+              width: 80%;
+              &__conteneur-textecoeur {
+                  width: 100%;
+                  justify-content: inherit;
+                  flex-direction: column;
+                  &__texte {
+                      &>p {
+                          font-size: 1rem;
+                          margin-top: 0;
+                      }
+                      &>h3 {
+                          font-size: 1rem;
+                      }
+                  }
+              }
+          }
+      }
+      .foot {
+          &__logo {
+              display: block;
+              width: 100%;
+              margin-left: 0;
+          }
+          &__conteneuraetspan {
+              margin-left: 0.5rem;
+          }
+      }
+  }
