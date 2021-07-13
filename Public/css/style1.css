@@ -192,22 +192,29 @@ h1 {
   font-size: 1.5rem;
   transition: transform 1s cubic-bezier(0, 1.13, 0.08, 1.17);
 }
-.principale__bouton {
-  padding: 1rem;
-  width: 14rem;
-  border-radius: 2rem;
-  margin-left: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  border: none;
-  height: 4rem;
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  background: linear-gradient(349deg, #9356DC, #FF79DA);
+.principale__bouton2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.principale__bouton:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-  transition: box-shadow 150ms linear;
+.principale__bouton2__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 13.75rem;
+  height: 3.125rem;
+  border-radius: 1.875rem;
+  border: none;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 150ms;
+}
+.principale__bouton2__btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.32);
 }
 
 .foot {
