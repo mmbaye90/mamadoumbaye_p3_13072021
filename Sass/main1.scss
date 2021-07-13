@@ -194,7 +194,6 @@
                     cursor: pointer;
                 }
                 &:hover &__bg {
-                    background: pink;
                     left: 80%;
                     &__cercle {
                         transform: rotate( 180deg);
@@ -218,6 +217,7 @@
                         }
                         &__prix {
                             margin-right: 1rem;
+                            font-weight: 600;
                         }
                     }
                 }

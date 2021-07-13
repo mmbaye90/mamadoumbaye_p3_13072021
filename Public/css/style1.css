@@ -148,7 +148,6 @@ h1 {
   cursor: pointer;
 }
 .principale__blocparent__menu:hover .principale__blocparent__menu__bg {
-  background: pink;
   left: 80%;
 }
 .principale__blocparent__menu:hover .principale__blocparent__menu__bg__cercle {
@@ -174,6 +173,7 @@ h1 {
 }
 .principale__blocparent__menu__cntneur-plat-ing-prix__cntner-ing-prix__prix {
   margin-right: 1rem;
+  font-weight: 600;
 }
 .principale__blocparent__menu__bg {
   background: #99E2D0;
