@@ -108,7 +108,7 @@ h1 {
   background: #FFFFFF;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   animation: apparition 1.2s ease-out both;
 }
 .principale__blocparent__menu--menu1 {
@@ -195,7 +195,7 @@ h1 {
 .principale__blocparent__menu__bg__cercle {
   color: #FFFFFF;
   font-size: 1.5rem;
-  transition: transform 1s cubic-bezier(0, 1.13, 0.08, 1.17);
+  transition: transform 1s ease-in-out;
 }
 .principale__bouton2 {
   display: flex;

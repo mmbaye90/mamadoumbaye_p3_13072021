@@ -17,7 +17,7 @@
         $bg-footer:#353535;
         $color-black:black;
         $box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
-        $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 15%);
+        $box-shadow-carte :0 5px 10px 0 rgb(0 0 0 / 10%);
         @mixin centrer-et-mettre-en-colone {
             display: flex;
             justify-content: center;
@@ -233,7 +233,7 @@
                         &__cercle {
                             color: $white-color;
                             font-size: 1.5rem;
-                            transition: transform 1s cubic-bezier(0, 1.13, 0.08, 1.17);
+                            transition: transform 1s ease-in-out;
                         }
                     }
                 }

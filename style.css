@@ -164,7 +164,7 @@ body {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .principale__section1__bouton:hover {
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
   transform: scale(1.15);
   transition: box-shadow 150ms linear, transform 150ms;
 }
@@ -179,7 +179,7 @@ body {
 }
 .principale__section2__conteneur-chifretexte {
   display: flex;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   border-radius: 2rem;
   min-width: 100%;
@@ -238,7 +238,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .section-photo__bloca > img {
@@ -257,7 +257,7 @@ body {
   top: 0;
   right: 1.2rem;
   opacity: 1;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .section-photo__bloca__conteneur-textecoeur__coeur-filled {
   position: absolute;
@@ -269,7 +269,7 @@ body {
   -webkit-text-fill-color: transparent;
   transform: scale(1);
   opacity: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: all 1s;
 }
 .section-photo__bloca__conteneur-textecoeur__coeur-filled:hover {
@@ -388,7 +388,7 @@ body {
     background: linear-gradient(349deg, #9356DC, #FF79DA);
   }
   .principale__section1__bouton:hover {
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 150ms linear;
   }
   .principale__section2 {
@@ -413,7 +413,7 @@ body {
     align-items: center;
     border: none;
     background: #F6F6F6;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.1);
     border-radius: 1.5rem;
     width: 100%;
     margin-left: 0.8rem;

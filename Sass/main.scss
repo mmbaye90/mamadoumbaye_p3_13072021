@@ -17,7 +17,7 @@
   $bg-footer:#353535;
   $color-black:black;
   $box-shadow-head:0 -0.188rem 0.188rem rgb(0 0 0 / 25%);
-  $box-shadow-carte: 0.25rem 0.25rem 10px rgb(0 0 0 / 30%);
+  $box-shadow-carte: 0.25rem 0.25rem 10px rgb(0 0 0 / 10%);
   @mixin centrer-et-mettre-en-colone {
       display: flex;
       justify-content: center;
@@ -286,7 +286,7 @@
                   top: 0;
                   right: 1.2rem;
                   opacity: 1;
-                  font-size: 24px;
+                  font-size: 1.5rem;
               }
               &__coeur-filled {
                   position: absolute;
@@ -298,7 +298,7 @@
                   -webkit-text-fill-color: transparent;
                   transform: scale(1);
                   opacity: 0;
-                  font-size: 24px;
+                  font-size: 1.5rem;
                   transition: all 1s;
                   &:hover {
                       opacity: 1;
