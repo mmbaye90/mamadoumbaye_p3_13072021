@@ -273,6 +273,20 @@ h1 {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
   }
+  .principale__cntnr-titre-coeur__coeur-filled:active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .principale__menu:active .principale__menu__cntneur-plat-ing-prix {
+    width: 80%;
+    cursor: pointer;
+  }
+  .principale__menu:active .principale__menu__bg {
+    left: 80%;
+  }
+  .principale__menu:active .principale__menu__bg__cercle {
+    transform: rotate(180deg);
+  }
 
   .foot {
     display: grid;

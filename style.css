@@ -479,6 +479,10 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  .section-photo__bloca__conteneur-textecoeur__coeur-filled:active {
+    opacity: 1;
+    transform: scale(1);
+  }
   .section-photo__bloca__conteneur-textecoeur__texte {
     color: #353535;
   }

@@ -315,6 +315,26 @@
                 position: relative;
                 border-top-left-radius: 2rem;
                 border-top-right-radius: 2rem;
+                &__cntnr-titre-coeur {
+                    &__coeur-filled {
+                        &:active {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+                &__menu {
+                    &:active &__cntneur-plat-ing-prix {
+                        width: 80%;
+                        cursor: pointer;
+                    }
+                    &:active &__bg {
+                        left: 80%;
+                        &__cercle {
+                            transform: rotate( 180deg);
+                        }
+                    }
+                }
             }
             .foot {
                 display: grid;
