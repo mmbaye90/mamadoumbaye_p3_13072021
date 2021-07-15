@@ -274,7 +274,7 @@ body {
 }
 .section-photo__bloca__conteneur-textecoeur__coeur-filled:hover {
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1);
 }
 .section-photo__bloca__conteneur-textecoeur__slide {
   background: #99E2D0;
