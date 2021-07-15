@@ -123,6 +123,12 @@ body {
   margin-top: -1rem;
   padding-bottom: 3rem;
 }
+.foot__conteneuraetspan__icone-a > a:hover {
+  color: #99E2D0;
+}
+.foot__conteneuraetspan > a:hover {
+  color: #99E2D0;
+}
 .foot__conteneuraetspan__span {
   color: white;
 }
