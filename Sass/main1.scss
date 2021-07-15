@@ -118,13 +118,12 @@
                     -webkit-background-clip: text;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    transform: scale(1);
                     opacity: 0;
                     font-size: 1.5rem;
                     transition: all 1s;
                     &:hover {
                         opacity: 1;
-                        transform: scale(1.15);
+                        transform: scale(1);
                     }
                 }
             }
