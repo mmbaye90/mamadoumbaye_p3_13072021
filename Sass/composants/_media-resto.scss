@@ -1,0 +1,93 @@
+@media all and (max-width:600px) {
+    .bloc-photo {
+        box-shadow: inherit;
+        padding: 0;
+        &__img {
+            border-radius: inherit;
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+        }
+    }
+    .principale {
+        margin-top: -2rem;
+        position: relative;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        &__cntnr-titre-coeur {
+            &__coeur-filled {
+                &:active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+        &__menu {
+            &:active &__cntneur-plat-ing-prix {
+                width: 80%;
+                cursor: pointer;
+            }
+            &:active &__bg {
+                left: 80%;
+                &__cercle {
+                    transform: rotate( 180deg);
+                }
+            }
+        }
+    }
+    .foot {
+        display: grid;
+        background: $bg-footer;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo" "liste";
+        &__logo {
+            grid-area: logo;
+            height: 9rem;
+            margin-top: -1rem;
+            margin-left: 1.5rem;
+        }
+        &__conteneuraetspan {
+            grid-area: liste;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-top: -1.5rem;
+            margin-left: 1.5rem;
+            padding-bottom: 3rem;
+            &__icone-a {
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            &__span {
+                margin-bottom: 1rem;
+                color: $white-color;
+            }
+            &__lien {
+                color: $white-color;
+                text-decoration: none;
+                margin-bottom: 1rem;
+                &--modifier {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:340px) {
+    .principale {
+        &__cntnr-titre-coeur {
+            margin-left: 0;
+            font-size: 0.7rem;
+            &__coeur-vide {
+                font-size: 1.5rem;
+                margin-right: 0;
+            }
+            &__coeur-filled {
+                font-size: 1.5rem;
+                margin-right: 0;
+            }
+        }
+    }
+}

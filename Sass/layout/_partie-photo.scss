@@ -1,0 +1,12 @@
+.bloc-photo {
+    box-shadow: $box-shadow-head;
+    padding-top: 0.5rem;
+    @include centrer-uniqmnt;
+    background: $bg-corp;
+    &__img {
+        border-radius: 1rem;
+        width: 80%;
+        height: 35rem;
+        object-fit: cover;
+    }
+}

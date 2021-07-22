@@ -1,0 +1,46 @@
+@mixin enlv-deco-a {
+    text-decoration: none;
+}
+
+@mixin centrer-uniqmnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin decalementhautbas {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@mixin border-radius-carte {
+    border-radius: 1rem;
+}
+
+@mixin border-radius-img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@mixin text-deco-and-col-blck-fs {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+@mixin sup-deco {
+    text-decoration: none;
+}
+
+@mixin hoverfooter {
+    &>a:hover {
+        color: $color-tertiaire;
+    }
+}
+
+@mixin centrer-et-mettre-en-colone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

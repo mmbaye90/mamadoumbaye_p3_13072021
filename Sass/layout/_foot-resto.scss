@@ -1,0 +1,31 @@
+.foot {
+    display: grid;
+    background: $bg-footer;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+    grid-template-areas: ". . logo logo" "liste liste liste liste";
+    &__logo {
+        grid-area: logo;
+        height: 10rem;
+    }
+    &__conteneuraetspan {
+        grid-area: liste;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -1rem;
+        padding-bottom: 3rem;
+        &__icone-a {
+            @include hoverfooter;
+        }
+        @include hoverfooter;
+        &__span {
+            color: white;
+        }
+        &__lien {
+            color: white;
+            text-decoration: none;
+            &--modifier {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

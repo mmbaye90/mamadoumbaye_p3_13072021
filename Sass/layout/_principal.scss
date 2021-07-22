@@ -1,0 +1,144 @@
+.principale {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1 section2";
+    border-bottom: 3px solid $color-primary;
+    background: $bg-corp;
+    box-shadow: 0px 3px 3px #73737338 inset;
+    &__section1 {
+        grid-area: section1;
+        text-align: center;
+        @include centrer-et-mettre-en-colone;
+        &__bouton {
+            margin-top: 2rem;
+            cursor: pointer;
+            width: 13rem;
+            border-radius: 2rem;
+            border: none;
+            height: 3rem;
+            color: $white-color;
+            font-size: 1rem;
+            background: linear-gradient( 349deg, $color-primary, $color-second);
+            transform: scale(1);
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+            &:hover {
+                box-shadow: $box-shadow-carte;
+                transform: scale(1.15);
+                transition: box-shadow 150ms linear, transform 150ms;
+            }
+        }
+    }
+    &__section2 {
+        grid-area: section2;
+        padding: 2rem;
+        box-shadow: -3px 0px 1px black;
+        @include centrer-et-mettre-en-colone;
+        &__conteneur-chifretexte {
+            display: flex;
+            box-shadow: $box-shadow-carte;
+            background: $white-color;
+            border-radius: 2rem;
+            min-width: 100%;
+            height: 5rem;
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+            &__item {
+                margin-top: 1.6rem;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+                color: gray;
+                &--chiffre {
+                    background: #9356DC;
+                    text-align: center;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                    line-height: 1.4;
+                    margin-left: -1rem;
+                    color: #FFFFFF;
+                }
+                &--texte {
+                    margin-left: 0.5rem;
+                    color: rgb(0, 0, 0);
+                }
+                &--store {
+                    color: #9356DC;
+                }
+            }
+        }
+    }
+}
+
+.section-photo {
+    max-width: 960px;
+    margin: auto;
+    @include centrer-uniqmnt;
+    flex-wrap: wrap;
+    background: $white-color;
+    &__titre {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        background: $bg-corp;
+    }
+    &__bloca {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        background: $white-color;
+        margin: 1rem;
+        @include border-radius-carte;
+        @include text-deco-and-col-blck-fs;
+        box-shadow: $box-shadow-carte;
+        position: relative;
+        &>img {
+            width: 100%;
+            height: 15rem;
+            @include border-radius-img;
+        }
+        &__conteneur-textecoeur {
+            margin-left: 1rem;
+            display: flex;
+            position: relative;
+            &__coeur-vide {
+                position: absolute;
+                top: 0;
+                right: 1.2rem;
+                opacity: 1;
+                font-size: 1.5rem;
+            }
+            &__coeur-filled {
+                position: absolute;
+                top: 0;
+                right: 1.2rem;
+                background: linear-gradient( 228deg, $color-primary, $color-second);
+                background-clip: border-box;
+                -webkit-background-clip: border-box;
+                color: transparent;
+                transform: scale(1);
+                opacity: 0;
+                font-size: 1.5rem;
+                transition: all 1s;
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            &__slide {
+                background: $color-tertiaire;
+                font-size: 0.85rem;
+                font-weight: 500;
+                border-radius: 0.188rem;
+                width: 5rem;
+                height: 1.875rem;
+                @include centrer-uniqmnt;
+                position: absolute;
+                top: 0;
+                right: 1rem;
+                color: #278870;
+            }
+        }
+    }
+}

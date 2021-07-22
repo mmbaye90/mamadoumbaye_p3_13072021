@@ -7,58 +7,6 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
-.loader {
-  position: fixed;
-  z-index: 20;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: black;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  opacity: 1;
-  animation: loader 3s ease-in-out normal forwards;
-}
-@keyframes loader {
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-.loader__conteneur {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader__conteneur > span {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-radius: 1rem;
-  background: #9356DC;
-  margin-top: -6rem;
-  margin-right: 1rem;
-  animation: bond 0.6s infinite alternate;
-}
-.loader__conteneur > span:nth-child(2) {
-  background: #FF79DA;
-  animation-delay: 0.2s;
-}
-.loader__conteneur > span:nth-child(3) {
-  background: #99E2D0;
-  animation-delay: 0.4s;
-}
-@keyframes bond {
-  to {
-    width: 1rem;
-    height: 1rem;
-    transform: translate3d(0, -1rem, 0);
-  }
-}
-
 .heading {
   display: grid;
   padding-bottom: 2rem;
@@ -102,40 +50,6 @@ body {
   height: 92%;
   width: 50%;
   background: #EAEAEA;
-}
-
-.foot {
-  display: grid;
-  background: #353535;
-  grid-template-columns: 1fr 1fr 1.5fr 1fr;
-  grid-template-areas: ". . logo logo" "liste liste liste liste";
-}
-.foot__logo {
-  grid-area: logo;
-  height: 10rem;
-}
-.foot__conteneuraetspan {
-  grid-area: liste;
-  display: flex;
-  justify-content: space-around;
-  margin-top: -1rem;
-  padding-bottom: 3rem;
-}
-.foot__conteneuraetspan__icone-a > a:hover {
-  color: #99E2D0;
-}
-.foot__conteneuraetspan > a:hover {
-  color: #99E2D0;
-}
-.foot__conteneuraetspan__span {
-  color: white;
-}
-.foot__conteneuraetspan__lien {
-  color: white;
-  text-decoration: none;
-}
-.foot__conteneuraetspan__lien--modifier {
-  margin-left: 0.5rem;
 }
 
 .principale {
@@ -269,6 +183,7 @@ body {
   right: 1.2rem;
   background: linear-gradient(228deg, #9356DC, #FF79DA);
   background-clip: border-box;
+  -webkit-background-clip: border-box;
   color: transparent;
   transform: scale(1);
   opacity: 0;
@@ -293,6 +208,92 @@ body {
   top: 0;
   right: 1rem;
   color: #278870;
+}
+
+.foot {
+  display: grid;
+  background: #353535;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr;
+  grid-template-areas: ". . logo logo" "liste liste liste liste";
+}
+.foot__logo {
+  grid-area: logo;
+  height: 10rem;
+}
+.foot__conteneuraetspan {
+  grid-area: liste;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1rem;
+  padding-bottom: 3rem;
+}
+.foot__conteneuraetspan__icone-a > a:hover {
+  color: #99E2D0;
+}
+.foot__conteneuraetspan > a:hover {
+  color: #99E2D0;
+}
+.foot__conteneuraetspan__span {
+  color: white;
+}
+.foot__conteneuraetspan__lien {
+  color: white;
+  text-decoration: none;
+}
+.foot__conteneuraetspan__lien--modifier {
+  margin-left: 0.5rem;
+}
+
+.loader {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  animation: loader 3s ease-in-out normal forwards;
+}
+@keyframes loader {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.loader__conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__conteneur > span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-radius: 1rem;
+  background: #9356DC;
+  margin-top: -6rem;
+  margin-right: 1rem;
+  animation: bond 0.6s infinite alternate;
+}
+.loader__conteneur > span:nth-child(2) {
+  background: #FF79DA;
+  animation-delay: 0.2s;
+}
+.loader__conteneur > span:nth-child(3) {
+  background: #99E2D0;
+  animation-delay: 0.4s;
+}
+@keyframes bond {
+  to {
+    width: 1rem;
+    height: 1rem;
+    transform: translate3d(0, -1rem, 0);
+  }
 }
 
 @media all and (max-width: 900px) {
