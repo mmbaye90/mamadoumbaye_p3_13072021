@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  font-family: Shrikhand, "cursive";
+  font-family: "Shrikhand", "cursive";
 }
 
 .heading {
@@ -70,9 +70,8 @@ h1 {
   font-size: 1.5rem;
   margin-right: 2rem;
   background: linear-gradient(228deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  color: transparent;
   opacity: 0;
   font-size: 1.5rem;
   transition: all 1s;

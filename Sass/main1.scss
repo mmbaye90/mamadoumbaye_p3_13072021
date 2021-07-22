@@ -5,7 +5,7 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
         h1 {
-            font-family: Shrikhand, "cursive";
+            font-family: 'Shrikhand', 'cursive';
         }
         
         $color-primary :#9356DC;
@@ -121,9 +121,9 @@
                     font-size: 1.5rem;
                     margin-right: 2rem;
                     background: linear-gradient( 228deg, $color-primary, $color-second);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    background-clip: border-box;
+                    //   -webkit-background-clip: border-box;
+                    color: transparent;
                     opacity: 0;
                     font-size: 1.5rem;
                     transition: all 1s;
