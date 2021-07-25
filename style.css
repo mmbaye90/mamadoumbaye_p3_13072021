@@ -182,9 +182,9 @@ body {
   top: 0;
   right: 1.2rem;
   background: linear-gradient(228deg, #9356DC, #FF79DA);
-  background-clip: border-box;
-  -webkit-background-clip: border-box;
-  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1);
   opacity: 0;
   font-size: 1.5rem;
